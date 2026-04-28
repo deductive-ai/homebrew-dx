@@ -5,21 +5,21 @@
 class Dx < Formula
   desc "CLI for Deductive AI — ask questions about your infrastructure"
   homepage "https://deductive.ai"
-  version "0.5.0"
+  version "0.5.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deductive-ai/dx/releases/download/v0.5.0/dx_0.5.0_darwin_amd64.tar.gz"
-      sha256 "9b09d6e00abe32467f8df9f4ce532e0ff82c4f1112c9467d0f060802e3902adc"
+      url "https://github.com/deductive-ai/dx/releases/download/v0.5.1/dx_0.5.1_darwin_amd64.tar.gz"
+      sha256 "15afcf2c162eb6a802656ff190a5723d3732ba3a8897fa790c0cc6e5765164c3"
 
       define_method(:install) do
         bin.install "dx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deductive-ai/dx/releases/download/v0.5.0/dx_0.5.0_darwin_arm64.tar.gz"
-      sha256 "2732a8f6a03a972be40533aa0032c87ec63952fdd462b1da1f52bd2026fe7728"
+      url "https://github.com/deductive-ai/dx/releases/download/v0.5.1/dx_0.5.1_darwin_arm64.tar.gz"
+      sha256 "b5c566425e8fecd63e3a1dad480d4e608f7f3554f8a4dd416f2f6e0dfb792886"
 
       define_method(:install) do
         bin.install "dx"
@@ -29,15 +29,15 @@ class Dx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deductive-ai/dx/releases/download/v0.5.0/dx_0.5.0_linux_amd64.tar.gz"
-      sha256 "101db16df3efa3ae85ffe88fda93d53ed92d2f8972e7466663b9ff67d48215fe"
+      url "https://github.com/deductive-ai/dx/releases/download/v0.5.1/dx_0.5.1_linux_amd64.tar.gz"
+      sha256 "6442a5e856c1f40f14ea4f98bc2658fe6963e40869eeae19c269abf650fe48f7"
       define_method(:install) do
         bin.install "dx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deductive-ai/dx/releases/download/v0.5.0/dx_0.5.0_linux_arm64.tar.gz"
-      sha256 "075cda16f67aa90a712b837dcb02c1932a3f197cbe4096c6c62efb32dc37ab64"
+      url "https://github.com/deductive-ai/dx/releases/download/v0.5.1/dx_0.5.1_linux_arm64.tar.gz"
+      sha256 "0b584a26e4492d6a13e739c169ab30009bb9fd71895dbae55f9d12a0cfcafd24"
       define_method(:install) do
         bin.install "dx"
       end
