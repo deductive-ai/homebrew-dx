@@ -11,7 +11,7 @@ class Dx < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/deductive-ai/dx/releases/download/v0.5.2/dx_0.5.2_darwin_amd64.tar.gz"
-      sha256 "31eeb199ce32411a7a43225fae1d114813ee84568f54a89ce1abc4832bf3ccab"
+      sha256 "264be67ded1129ffc62c889cee50bcfde09a5a4dce63886526106f867915734a"
 
       define_method(:install) do
         bin.install "dx"
@@ -19,7 +19,7 @@ class Dx < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/deductive-ai/dx/releases/download/v0.5.2/dx_0.5.2_darwin_arm64.tar.gz"
-      sha256 "4692b8924b7d7025115fc179755521f74ba0d475a4780c6c95ea17af4ca3e648"
+      sha256 "01b245eff84e61fe6cae8c8bff61ecfc52ee10d9e3a9d837256ae3f782820f3c"
 
       define_method(:install) do
         bin.install "dx"
@@ -30,14 +30,14 @@ class Dx < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/deductive-ai/dx/releases/download/v0.5.2/dx_0.5.2_linux_amd64.tar.gz"
-      sha256 "29e811c895b05dd693184b0bec2a5d7a02aa6629391bfb771eb1a6c7880189b4"
+      sha256 "93b787333dc03093edca8d0c44b3c0043065196612a16cf4cd91762dd9d9bac1"
       define_method(:install) do
         bin.install "dx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/deductive-ai/dx/releases/download/v0.5.2/dx_0.5.2_linux_arm64.tar.gz"
-      sha256 "0b82d27807143113d8c4954154eae87a965617be787e51c498dce6938c8f7518"
+      sha256 "d831fc48cd46fcd6b95554972059cb4ec7add05e0578db415a8b99f4f56b5a64"
       define_method(:install) do
         bin.install "dx"
       end
